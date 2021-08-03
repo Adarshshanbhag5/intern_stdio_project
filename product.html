@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Fabstore</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="logo flex">
+        <h1>Fabstore</h1>
+        <img src="./images/logo.jpg" alt="" />
+      </div>
+      <nav class="nav-menu">
+        <ul class="flex nav-ul">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./categoray.html">Categary</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-cart flex">
+        <div class="btn search">Search</div>
+        <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+      </div>
+    </header>
+
+    <section class="product-container">
+      <div class="head">Products</div>
+      <div class="page-content flex">
+        <div class="filters">
+          <h2>Filters</h2>
+          <div class="category-wrap">
+            <h3>Category</h3>
+            <div>Category-1</div>
+            <div>Category-2</div>
+            <div>Category-3</div>
+            <div>Category-4</div>
+          </div>
+          <form>
+            <div class="form-group">
+              <div><b>Price</b></div>
+              <input
+                type="range"
+                min="100"
+                max="1000"
+                step="100"
+                class="form-control-range"
+              />
+            </div>
+            <div class="price-range flex">
+              <span>₹100</span>
+              <span>₹1000</span>
+            </div>
+          </form>
+        </div>
+        <div class="latest-products">
+          <div class="latest-product-box grid">
+            <div class="product-box flex">
+              <div class="product-img">
+                <img src="./images/product1.jpg" alt="" />
+              </div>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <div class="buy-link">
+                <a href="#">Women coat with details</a>
+              </div>
+              <div class="price">₹700</div>
+            </div>
+            <div class="product-box flex">
+              <div class="product-img">
+                <img src="./images/product2.jpg" alt="" />
+              </div>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <div class="buy-link">
+                <a href="#">Green Jeans with details</a>
+              </div>
+              <div class="price">₹500</div>
+            </div>
+            <div class="product-box flex">
+              <div class="product-img">
+                <img src="./images/product3.jpg" alt="" />
+              </div>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <div class="buy-link">
+                <a href="#">Girl Frock with details</a>
+              </div>
+              <div class="price">₹400</div>
+            </div>
+            <div class="product-box flex">
+              <div class="product-img">
+                <img src="./images/product4.jpg" alt="" />
+              </div>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <div class="buy-link">
+                <a href="#">Jacket with details</a>
+              </div>
+              <div class="price">₹800</div>
+            </div>
+            <div class="product-box flex">
+              <div class="product-img">
+                <img src="./images/product5.jpg" alt="" />
+              </div>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <div class="buy-link">
+                <a href="#">Luggage bag with details</a>
+              </div>
+              <div class="price">₹600</div>
+            </div>
+            <div class="product-box flex">
+              <div class="product-img">
+                <img src="./images/product6.jpg" alt="" />
+              </div>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <div class="buy-link">
+                <a href="#">Men coat with details</a>
+              </div>
+              <div class="price">₹900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-wrap grid">
+        <div class="address">
+          <img src="./images/logo.jpg" alt="" />
+          <p>
+            Fabstore is a leading online fashion clothes selling website based
+            and headquatered in Ahmedabad,Gujarat,India.
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick-links</h3>
+          <ul>
+            <li>About</li>
+            <li>Offers & Discounts</li>
+            <li>Get Coupon</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="new-products">
+          <h3>Products</h3>
+          <ul>
+            <li>Woman Cloth</li>
+            <li>Fashion Accessories</li>
+            <li>Man Accessories</li>
+            <li>Rubber made Toys</li>
+          </ul>
+        </div>
+        <div class="support">
+          <h3>Support</h3>
+          <ul>
+            <li>Frequently Asked Questions</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Report a Payment Issue</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright ©2020 All rights reserved ©| Company Name: Fabstore | Designed
+        by Adarsh shanbhag
+      </div>
+    </footer>
+  </body>
+</html>
