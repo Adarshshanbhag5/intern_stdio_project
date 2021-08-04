@@ -24,7 +24,7 @@
         <ul class="flex nav-ul">
           <li><a href="./home.html">Home</a></li>
           <li><a href="./product.html">Product</a></li>
-          <li><a href="./categoray.html">Categary</a></li>
+          <li><a href="./categoray.html">Category</a></li>
           <li><a href="./about.html">About Us</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
         </ul>
@@ -60,73 +60,69 @@
         </div>
       </nav>
     </header>
-
-    <section class="latest-products">
-      <div class="head">Categories</div>
-      <div class="latest-product-box category-page grid">
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category1.jpg" alt="" />
+    <section class="checkout-wrap">
+      <div class="head">Checkout</div>
+      <div class="checkout-container flex">
+        <form action="#">
+          <h2>Billing details</h2>
+          <div class="form-name flex">
+            <div class="first-name">
+              <label for="firstname">First name</label>
+              <input type="text" required />
+            </div>
+            <div class="last-name">
+              <label for="lastname">Last name</label>
+              <input type="text" required />
+            </div>
           </div>
-          <div class="buy-link">
-            <a href="#">Men Coat</a>
+          <label for="phone">Phone</label>
+          <input type="text" required />
+          <label for="email">Email address</label>
+          <input type="email" required />
+          <label for="address-1">Address line-1</label>
+          <input
+            type="text"
+            required
+            placeholder="house number and street name"
+          />
+          <label for="address-2">Address line-2</label>
+          <input
+            type="text"
+            placeholder="Apartment,suite,unit etc. (optional)"
+          />
+          <label for="zipcode">Post code/Zip code</label>
+          <input type="text" required />
+          <label for="city">Town/City</label>
+          <input type="text" required />
+          <label for="additional">Additional information</label>
+          <textarea cols="30" rows="7"></textarea>
+          <button
+            class="btn"
+            onclick="location.href='./order_conformation.html'"
+          >
+            Purchase
+          </button>
+        </form>
+        <div class="summary-container">
+          <div class="sub-head">Order Summary</div>
+          <div class="products flex">
+            <p>Product name-1</p>
+            <p>X2</p>
+            <p>₹1400</p>
           </div>
-          <div class="descrip">100% long staple cotton fabric coat for men</div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category2.jpg" alt="" />
+          <div class="products flex">
+            <p>Product name-2</p>
+            <p>X2</p>
+            <p>₹800</p>
           </div>
-          <div class="buy-link">
-            <a href="#">Casual Shirt</a>
+          <hr />
+          <div class="total-amt flex">
+            <div><b>Total amount</b></div>
+            <div>₹2200</div>
           </div>
-          <div class="descrip">
-            plain, printed and comfortable cotton shirt for men
-          </div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category3.jpg" alt="" />
-          </div>
-          <div class="buy-link">
-            <a href="#">jeans and blazer</a>
-          </div>
-          <div class="descrip">
-            effortlessly stylish and comfortable Blue jeans and blazer combo
-          </div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category4.jpg" alt="" />
-          </div>
-          <div class="buy-link">
-            <a href="#">ladies watch</a>
-          </div>
-          <div class="descrip">analog watch for women with stones studded</div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/product5.jpg" alt="" />
-          </div>
-          <div class="buy-link">
-            <a href="#">Luggage bag</a>
-          </div>
-          <div class="descrip">
-            stylish leather luggage bag with leather strips
-          </div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category6.jpg" alt="" />
-          </div>
-          <div class="buy-link">
-            <a href="#">sports shoes</a>
-          </div>
-          <div class="descrip">blue and pink sports shoes for women</div>
         </div>
       </div>
     </section>
-
     <footer>
       <div class="footer-wrap grid">
         <div class="address">

@@ -20,7 +20,7 @@
         <h1>Fabstore</h1>
         <img src="./images/logo.jpg" alt="" />
       </div>
-      <nav class="nav-menu">
+      <nav class="nav-menu desktop-menu">
         <ul class="flex nav-ul">
           <li><a href="./home.html">Home</a></li>
           <li><a href="./product.html">Product</a></li>
@@ -29,10 +29,36 @@
           <li><a href="./contact.html">Contact Us</a></li>
         </ul>
       </nav>
-      <div class="search-cart flex">
-        <div class="btn search">Search</div>
-        <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+      <div class="search-cart flex desktop-menu">
+        <div class="btn search" onclick="location.href='./search.html'">
+          Search
+        </div>
+        <div class="cart" onclick="location.href='./cart.html'">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
       </div>
+      <div class="burger">
+        <div class="burger-line-1"></div>
+        <div class="burger-line-2"></div>
+        <div class="burger-line-3"></div>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="nav-ul flex">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./categoray.html">Category</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-cart flex">
+          <div class="btn search" onclick="location.href='./search.html'">
+            Search
+          </div>
+          <div class="cart" onclick="location.href='./cart.html'">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section class="contact-wrap">
@@ -98,5 +124,13 @@
         by Adarsh shanbhag
       </div>
     </footer>
+    <script>
+      const burger = document.querySelector(".burger");
+      const mobileNav = document.querySelector(".mobile-nav");
+      burger.addEventListener("click", () => {
+        mobileNav.classList.toggle("mobile-nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
   </body>
 </html>

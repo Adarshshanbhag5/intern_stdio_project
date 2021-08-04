@@ -24,7 +24,7 @@
         <ul class="flex nav-ul">
           <li><a href="./home.html">Home</a></li>
           <li><a href="./product.html">Product</a></li>
-          <li><a href="./categoray.html">Categary</a></li>
+          <li><a href="./categoray.html">Category</a></li>
           <li><a href="./about.html">About Us</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
         </ul>
@@ -61,68 +61,94 @@
       </nav>
     </header>
 
-    <section class="latest-products">
-      <div class="head">Categories</div>
-      <div class="latest-product-box category-page grid">
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category1.jpg" alt="" />
+    <section class="cart-page">
+      <div class="head">Cart</div>
+      <div class="cart-wrap flex">
+        <div class="cart-items-container">
+          <div class="sub-head">Cart(2 items)</div>
+          <div class="items flex">
+            <img src="./images/product1.jpg" alt="" />
+            <div class="inner">
+              <div class="item-name flex">
+                <div class="inner-detail">
+                  <h3>Women Coat</h3>
+                  <p>COAT:WOMEN</p>
+                  <p>COLOR:LIGHT BROWN</p>
+                  <p>SIZE:XL</p>
+                </div>
+                <div class="item-select">
+                  <label for="decrement" class="btn"
+                    ><i class="fas fa-minus"></i
+                  ></label>
+                  <input type="number" min="0" max="10" value="1" />
+                  <label for="decrement" class="btn"
+                    ><i class="fas fa-plus"></i
+                  ></label>
+                </div>
+              </div>
+              <div class="item-checkout flex">
+                <div class="remove-item">
+                  <i class="fas fa-trash-alt"></i>
+                  <span>REMOVE ITEM</span>
+                </div>
+                <div class="price">₹700</div>
+              </div>
+            </div>
           </div>
-          <div class="buy-link">
-            <a href="#">Men Coat</a>
+          <hr />
+          <div class="items flex">
+            <img src="./images/product3.jpg" alt="" />
+            <div class="inner">
+              <div class="item-name flex">
+                <div class="inner-detail">
+                  <h3>Girl Frock</h3>
+                  <p>FROCK:GIRL</p>
+                  <p>COLOR:GRAY</p>
+                  <p>SIZE:M</p>
+                </div>
+                <div class="item-select">
+                  <label for="decrement" class="btn"
+                    ><i class="fas fa-minus"></i
+                  ></label>
+                  <input type="number" min="0" max="10" value="1" />
+                  <label for="increment" class="btn"
+                    ><i class="fas fa-plus"></i
+                  ></label>
+                </div>
+              </div>
+              <div class="item-checkout flex">
+                <div class="remove-item">
+                  <i class="fas fa-trash-alt"></i>
+                  <span>REMOVE ITEM</span>
+                </div>
+                <div class="price">₹400</div>
+              </div>
+            </div>
           </div>
-          <div class="descrip">100% long staple cotton fabric coat for men</div>
         </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category2.jpg" alt="" />
+        <div class="summary-container">
+          <div class="sub-head">Order Summary</div>
+          <div class="products flex">
+            <p>Product name-1</p>
+            <p>X2</p>
+            <p>₹1400</p>
           </div>
-          <div class="buy-link">
-            <a href="#">Casual Shirt</a>
+          <div class="products flex">
+            <p>Product name-2</p>
+            <p>X2</p>
+            <p>₹800</p>
           </div>
-          <div class="descrip">
-            plain, printed and comfortable cotton shirt for men
+          <hr />
+          <div class="total-amt flex">
+            <div><b>Total amount</b></div>
+            <div>₹2200</div>
           </div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category3.jpg" alt="" />
+          <div
+            class="btn checkout-btn"
+            onclick="location.href='./checkout.html'"
+          >
+            Go to Checkout
           </div>
-          <div class="buy-link">
-            <a href="#">jeans and blazer</a>
-          </div>
-          <div class="descrip">
-            effortlessly stylish and comfortable Blue jeans and blazer combo
-          </div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category4.jpg" alt="" />
-          </div>
-          <div class="buy-link">
-            <a href="#">ladies watch</a>
-          </div>
-          <div class="descrip">analog watch for women with stones studded</div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/product5.jpg" alt="" />
-          </div>
-          <div class="buy-link">
-            <a href="#">Luggage bag</a>
-          </div>
-          <div class="descrip">
-            stylish leather luggage bag with leather strips
-          </div>
-        </div>
-        <div class="product-box flex">
-          <div class="product-img">
-            <img src="./images/category6.jpg" alt="" />
-          </div>
-          <div class="buy-link">
-            <a href="#">sports shoes</a>
-          </div>
-          <div class="descrip">blue and pink sports shoes for women</div>
         </div>
       </div>
     </section>
