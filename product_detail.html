@@ -64,99 +64,68 @@
         </div>
       </nav>
     </header>
-
-    <section class="cart-page">
-      <div class="head">Cart</div>
-      <div class="cart-wrap flex">
-        <div class="cart-items-container">
-          <div class="sub-head">Cart(2 items)</div>
-          <div class="items flex">
-            <img src="./images/product1.jpg" alt="" />
-            <div class="inner">
-              <div class="item-name flex">
-                <div class="inner-detail">
-                  <h3>Women Coat</h3>
-                  <p>COAT:WOMEN</p>
-                  <p>COLOR:LIGHT BROWN</p>
-                  <p>SIZE:XL</p>
-                </div>
-                <div class="item-select">
-                  <label for="decrement" class="btn"
-                    ><i class="fas fa-minus"></i
-                  ></label>
-                  <input type="number" min="0" max="10" value="1" />
-                  <label for="decrement" class="btn"
-                    ><i class="fas fa-plus"></i
-                  ></label>
-                </div>
-              </div>
-              <div class="item-checkout flex">
-                <div class="remove-item">
-                  <i class="fas fa-trash-alt"></i>
-                  <span>REMOVE ITEM</span>
-                </div>
-                <div class="price">₹700</div>
-              </div>
-            </div>
+    <section class="product-detail">
+      <div class="head">Product Detail</div>
+      <div class="detail-wrap flex">
+        <img src="./images/product2.jpg" alt="" />
+        <div class="detail-inner">
+          <h1>Blue denim shirt</h1>
+          <p>SHIRT</p>
+          <div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
           </div>
-          <hr />
-          <div class="items flex">
-            <img src="./images/product3.jpg" alt="" />
-            <div class="inner">
-              <div class="item-name flex">
-                <div class="inner-detail">
-                  <h3>Girl Frock</h3>
-                  <p>FROCK:GIRL</p>
-                  <p>COLOR:GRAY</p>
-                  <p>SIZE:M</p>
-                </div>
-                <div class="item-select">
-                  <label for="decrement" class="btn"
-                    ><i class="fas fa-minus"></i
-                  ></label>
-                  <input type="number" min="0" max="10" value="1" />
-                  <label for="increment" class="btn"
-                    ><i class="fas fa-plus"></i
-                  ></label>
-                </div>
-              </div>
-              <div class="item-checkout flex">
-                <div class="remove-item">
-                  <i class="fas fa-trash-alt"></i>
-                  <span>REMOVE ITEM</span>
-                </div>
-                <div class="price">₹400</div>
-              </div>
-            </div>
+          <div class="price">₹800</div>
+          <p>
+            A Coat suit is very Subtle 3-piece Outfit which is normally worn by
+            men and women in weddings, offices, and events. Men's wear coat suit
+            is a western formal outfit which comes in various fabrics and types.
+            Also, Coat suit for men comes in the Coat, Pant, and Shirt but some
+            5- pieces coat suit comes with additional vest and Tie or Bow.
+            Nowadays, the coat suits come in distinct varieties like Nehru style
+            Coat suit, Long coat suit, Tuxedo suit and many more. The
+            collections range from formal wear, party wear, casual wear and
+            ceremonial wear with ranges that spread across shirts to suits for
+            men, and dresses to blazers for women.
+          </p>
+          <div class="btn" onclick="location.href='./cart.html'">
+            Add to cart
           </div>
         </div>
-        <div class="summary-container">
-          <div class="sub-head">Order Summary</div>
-          <div class="products flex">
-            <p>Product name-1</p>
-            <p>X2</p>
-            <p>₹1400</p>
+      </div>
+      <div class="related-products">
+        <div class="sub-head">Related Products</div>
+        <div class="latest-product-box category-page grid">
+          <div class="product-box flex">
+            <div class="product-img">
+              <img src="./images/category1.jpg" alt="" />
+            </div>
+            <div class="buy-link">
+              <a href="#">Men Coat</a>
+            </div>
           </div>
-          <div class="products flex">
-            <p>Product name-2</p>
-            <p>X2</p>
-            <p>₹800</p>
+          <div class="product-box flex">
+            <div class="product-img">
+              <img src="./images/category2.jpg" alt="" />
+            </div>
+            <div class="buy-link">
+              <a href="#">Casual Shirt</a>
+            </div>
           </div>
-          <hr />
-          <div class="total-amt flex">
-            <div><b>Total amount</b></div>
-            <div>₹2200</div>
-          </div>
-          <div
-            class="btn checkout-btn"
-            onclick="location.href='./checkout.html'"
-          >
-            Go to Checkout
+          <div class="product-box flex">
+            <div class="product-img">
+              <img src="./images/category3.jpg" alt="" />
+            </div>
+            <div class="buy-link">
+              <a href="#">jeans and blazer</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <footer>
       <div class="footer-wrap grid">
         <div class="address">
@@ -199,6 +168,7 @@
         by Adarsh shanbhag
       </div>
     </footer>
+    <!-- <script src="./slider.js"></script> -->
     <script>
       const burger = document.querySelector(".burger");
       const mobileNav = document.querySelector(".mobile-nav");
